@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Note</title>
+  <style>
+    body {
+      position: relative;
+      z-index: 1;
+      background-color: #000000;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+      min-height: 100vh;
+    }
+
+    .background-hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 24 24' fill='%23cc0000' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E") repeat;
+      background-size: 30px 30px;
+      animation: moveHearts 20s linear infinite;
+      opacity: 0.25;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    @keyframes moveHearts {
+      0% { background-position: 0 0; }
+      100% { background-position: 0 1000px; }
+    }
+
+    iframe {
+      border-radius: 12px;
+      width: 100%;
+      height: 300px;
+      max-width: 500px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    .note {
+      margin-top: 40px;
+      font-size: 20px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="background-hearts"></div>
+
+  <iframe
+    width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1644938157&color=%23d62746&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+  </iframe>
+
+<div class="note">
+  <p>My love Tiara,</p>
+  <p>
+    Happy 3 months baby 🌷 Even from afar, you’re always in my heart.<br><br>
+    I'm glad you enjoyed the flowers I got you last time and I hope you will enjoy the flowers this time as well.<br><br>
+    I know sometimes I can be a bit of a pain, but I want you to know that I love you so much and I’m always here for you.<br><br>
+    Also, this song reminded me of us:
+  </p>
+  <blockquote style="font-style: italic; margin-left: 20px;">
+    "If I could be by your side<br>
+    I'll give you all my life, my seasons<br>
+    By your side, I'll be your seasons<br>
+    My love"
+  </blockquote>
+  <p>— Always yours, Ryuichi</p>
+</div>
